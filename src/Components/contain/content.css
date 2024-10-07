@@ -1,0 +1,143 @@
+.main-container {
+    margin-top: 0vw;
+    display: flex;
+    padding: 3vw;
+    width: calc(var(--allwidth) - 8vw);
+}
+
+.main-left {
+    width: 40%;
+    height: 600px;
+}
+
+.main-left > p {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.main-left p > span {
+    padding: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    transform: rotate(340deg);
+    transform-origin: bottom;
+    border: 1px dashed red;
+    -webkit-text-fill-color: rgb(218, 64, 90);
+    border-radius: 50%;
+}
+
+.main-right {
+    width: 60%;
+    height: 600px;
+    position: relative;
+}
+
+.main-right > img {
+    width: 75%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.main-right > p {
+    position: absolute;
+    font-size: 20px;
+    top: 80%;
+    left: -10%;
+    -webkit-text-fill-color: antiquewhite;
+    display: none;
+}
+
+.main-right > img:hover {
+}
+
+.main-right > img:hover + p {
+    display: block;
+}
+
+.little {
+    width: 20vw;
+    font-size: 20px;
+    font-weight: 500;
+    -webkit-text-fill-color: rgb(207, 204, 200);
+    word-wrap: none;
+}
+
+.butthold {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    margin-top: 55px;
+}
+
+.but {
+    padding: 15px;
+    border-radius: 0px 11px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 1s ease;
+}
+
+.but:hover {
+    background-color: #0684ae;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        padding: 2vw;
+    }
+
+    .main-left, .main-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-left > p {
+        font-size: 40px;
+    }
+
+    .main-left p > span {
+        font-size: 16px;
+    }
+
+    .little {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .butthold {
+        width: 100%;
+    }
+
+    .but {
+        width: 48%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 1.5vw;
+    }
+
+    .main-left > p {
+        font-size: 30px;
+    }
+
+    .main-right > p {
+        font-size: 16px;
+        top: 70%;
+    }
+
+    .but {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .little {
+        font-size: 16px;
+    }
+}

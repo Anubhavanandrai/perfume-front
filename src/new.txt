@@ -1,0 +1,54 @@
+import { Route, Routes } from 'react-router-dom';
+import Uniq from "./uni/Uniq.jsx";
+
+const Approutes = () => {
+  return (
+    <Routes>
+      <Route path="/unique" element={<Uniq />} />
+    </Routes>
+  );
+}
+
+export default Approutes;
+
+
+
+
+function Uniq() {
+  return (
+    <div>uniq is this fault </div>
+  )
+}
+
+export default Uniq;
+
+
+import './App.css';
+import Nav from "./Components/nav/Nav.jsx";
+import Content from "./Components/contain/Content.jsx";
+import Products from './Components/bottom/Products.jsx';
+import { useLocation } from "react-router-dom";
+import Approutes from "./Components/Routes.jsx";
+import Uniq from './Components/uni/Uniq.jsx';
+
+function App() {
+  const location = useLocation();
+
+  return (
+    <div className='main'>
+      {location.pathname !== "/unique" ? (
+        <>
+         
+          <Nav />
+          <Content />
+          <Products />
+        </>
+      ) : <Uniq/>}
+
+      <Approutes />
+    </div>
+  );
+}
+
+export default App;
+

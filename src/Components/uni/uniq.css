@@ -1,0 +1,151 @@
+.reviewcard {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 6vw;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.reviwimg {
+    height: 35px;
+    width: 35px;
+}
+
+.reviwimg > img {
+    height: 100%;
+    width: 100%;
+}
+
+.contentt {
+    padding: 10px;
+    width: 80%;
+}
+
+.myproduct {
+    display: flex;
+}
+
+.myproductimg {
+    height: 25%;
+    width: 25%;
+}
+
+.myproductimg > img {
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    width: 40%;
+    height: 25%;
+    padding: 3vw;
+}
+
+.lejaao {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: rgba(249, 249, 249, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lejaao h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: red;
+}
+
+.lejaao form {
+    display: flex;
+    flex-direction: column;
+}
+
+.lejaao input,
+.lejaao textarea {
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.lejaao input:focus,
+.lejaao textarea:focus {
+    outline: none;
+}
+
+.lejaao label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.lejaao button {
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.lejaao button:hover {
+    background-color: #0684ae;
+}
+
+@media (max-width: 768px) {
+    .myproduct {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .myproductimg,
+    .description {
+        width: 100%;
+        height: auto;
+    }
+
+    .description {
+        padding: 2vw;
+    }
+
+    .reviewcard {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        height: auto;
+    }
+
+    .contentt {
+        width: 100%;
+    }
+
+    .lejaao {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .myproduct {
+        padding: 10px;
+    }
+
+    .description {
+        padding: 1vw;
+        font-size: 0.9em;
+    }
+
+    .lejaao h3 {
+        font-size: 1.2em;
+    }
+
+    .lejaao input,
+    .lejaao textarea {
+        padding: 8px;
+    }
+
+    .lejaao button {
+        padding: 8px;
+    }
+}

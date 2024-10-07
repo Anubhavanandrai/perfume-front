@@ -1,0 +1,6 @@
+:root{
+    --mainsize:calc(100vw - 10vw);
+    --navletter:22px;
+    --style: bold;
+    --allwidth:calc(var(--mainsize) - 8vw);
+}

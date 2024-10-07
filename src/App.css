@@ -1,0 +1,13 @@
+body{
+    margin:0px;
+    padding:5vw;
+    box-sizing: border-box;
+   background: linear-gradient(to right, #77a1d3, #79cbca, #e684ae);;
+ 
+}
+.main{
+  width:var(--allwidth);
+  height: fit-content;
+  padding:4vw;
+  background: linear-gradient(to bottom right,#0684ae,#e1f4c4);
+}
