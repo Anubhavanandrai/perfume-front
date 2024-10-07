@@ -73,39 +73,49 @@
         height: 150px;
     }
 
+    .imgstore
+
     .heading > p {
         font-size: 20px;
     }
 
     .card > h4 {
         font-size: 18px;
+       
     }
 
     .card > p {
         font-size: 14px;
+        margin:5px;
     }
 }
 
 @media (max-width: 480px) {
     .productcard {
         grid-template-columns: 1fr;
+        position: relative;
     }
 
     .card {
         width: 100%;
         height: auto;
-        margin-top: 20px;
+        margin-top: 35px;
     }
 
     .heading > p {
         font-size: 18px;
+        
     }
 
     .card > h4 {
         font-size: 16px;
+        margin-bottom: 20px;
+
     }
 
     .card > p {
+        position: absolute;
+        bottom:0%;
         font-size: 12px;
     }
 

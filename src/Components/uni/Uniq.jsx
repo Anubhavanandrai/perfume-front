@@ -15,7 +15,7 @@ function Uniq() {
 
   const income = async () => {
     try {
-      const response = await axios.get("http://localhost:7000/review/getreview");
+      const response = await axios.get("perfume-backend-h6ogxcamv-anubhavanandrais-projects.vercel.app/review/getreview");
       setDa(response.data);
     } catch (err) {
       console.error("Fetching data disrupted", err);
@@ -33,7 +33,7 @@ function Uniq() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:7000/review/sendreview", reviewData);
+      const response = await axios.post("perfume-backend-h6ogxcamv-anubhavanandrais-projects.vercel.app/review/sendreview", reviewData);
       if (response.status === 201) {
         alert("Review submitted successfully!");
         income(); 
